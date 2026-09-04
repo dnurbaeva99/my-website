@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Ваше Имя</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Портфолио</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Привет! 👋</h1>
+            <p class="hero-subtitle">Я разработчик и дизайнер</p>
+            <p class="hero-description">Создаю красивые и функциональные веб-сайты</p>
+            <button class="cta-button" onclick="scrollToSection('contact')">Свяжитесь со мной</button>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-box"></div>
+        </div>
+    </section>
+
+    <!-- Секция Обо мне -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Я страстный веб-разработчик с опытом создания современных веб-приложений. Люблю изучать новые технологии и делиться знаниями с сообществом.</p>
+                    <p>Специализируюсь на:</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Проекты -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <!-- Проект 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Погодное приложение</h3>
+                    <p>Приложение для просмотра погоды с использованием API. Показывает температуру, влажность и прогноз.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="#" class="project-link">Посмотреть проект →</a>
+                </div>
+
+                <!-- Проект 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce сайт</h3>
+                    <p>Интернет-магазин с корзиной покупок, фильтрацией товаров и системой управления заказами.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="#" class="project-link">Посмотреть проект →</a>
+                </div>
+
+                <!-- Проект 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Управление задачами</h3>
+                    <p>Todo-приложение с возможностью создавать, редактировать и удалять задачи. Данные сохраняются локально.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a href="#" class="project-link">Посмотреть проект →</a>
+                </div>
+
+                <!-- Проект 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <h3>Блог платформа</h3>
+                    <p>Платформа для создания и публикации статей с системой комментариев и системой оценок.</p>
+                    <div class="project-tags">
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                    </div>
+                    <a href="#" class="project-link">Посмотреть проект →</a>
+                </div>
+
+                <!-- Проект 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Музыкальный плеер</h3>
+                    <p>Веб-плеер для прослушивания музыки с плейлистами, перемешиванием и регулировкой громкости.</p>
+                    <div class="project-tags">
+                        <span>HTML5 Audio</span>
+                        <span>JavaScript</span>
+                        <span>CSS3</span>
+                    </div>
+                    <a href="#" class="project-link">Посмотреть проект →</a>
+                </div>
+
+                <!-- Проект 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Галерея изображений</h3>
+                    <p>Интерактивная галерея с фильтрацией по категориям, лайтбоксом и встроенным поиском.</p>
+                    <div class="project-tags">
+                        <span>CSS Grid</span>
+                        <span>JavaScript</span>
+                        <span>Flexbox</span>
+                    </div>
+                    <a href="#" class="project-link">Посмотреть проект →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Давайте свяжемся!</h2>
+            <p class="contact-subtitle">Имеете вопрос или предложение? Свяжитесь со мной</p>
+            
+            <div class="contact-content">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить сообщение</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Местоположение</h4>
+                            <p>Ваш город, Страна</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Портфолио. Все права защищены. | Создано с ❤️ HTML & CSS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
